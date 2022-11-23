@@ -1,0 +1,166 @@
+/*
+=============================================================================
+>>>> color variable <<<<
+==============================================================================
+*/
+:root {
+    --header-bg-color: #e9b776;
+    --header-text-color: #282b2e;
+    --footer-bg-color: #524242;
+    --footer-text-color: #ffffff;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --bg-color: #f4f4f4;
+}
+/*
+=============================================================================
+DEFAULT STYLE START
+==============================================================================
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #383c40;
+    background: #fff;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,a,strong{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+}
+.section-padding {
+    padding: 50px 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li a, ul li a:hover, ul li a:focus, a,a:hover,a:focus{
+text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.section-title h2{
+    font-size: 2.5em;
+    color: var(--black-color);
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+/**
+================================================================================
+  1. DEFAULT STYLE END
+================================================================================
+*/
+
+/**
+================================================================================
+menu section style start
+================================================================================
+*/
+.menu-gallery-wrapper ul {
+    text-align: center;
+}
+
+.menu-gallery-wrapper ul li {
+    display: inline-block;
+    color: #383c40;
+    text-transform: uppercase;
+    margin: 5px 5px;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.menu-gallery-wrapper ul li.mixitup-control-active {
+    color: var(--white-color);
+    background-color: var(--header-bg-color);
+    border-color: var(--header-bg-color);
+}
+
+.menu-gallery-wrapper ul li:hover {
+    border-color: var(--header-bg-color);
+    background-color: var(--header-bg-color);
+    color: var(--white-color);
+}
+.menu-item-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin-top: 25px;
+}
+.grid-two {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 10px;
+}
+
+.single-menu-item-card {
+    box-shadow: 0 0 5px #ddd;
+    border-radius: 10px;
+}
+
+.single-menu-item-card .thumb {
+    background-color: var(--header-bg-color);
+}
+
+.single-menu-item-card .thumb img {
+    width: 75%;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.single-menu-item-card .content h4 {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+}
+
+.order-btn {
+    margin-left: auto;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.order-btn a {
+    display: block;
+    background: var(--header-bg-color);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px 15px;
+    color: var(--white-color);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.order-btn a:hover {
+    transform: scale(1.1);
+}
+
+.single-menu-item-card:hover {
+    transform: scale(1.03);
+    transition: all 0.5s;
+}
+
+.single-menu-item-card p.price {
+    font-weight: 500;
+    color: var(--header-bg-color);
+}
+/**
+================================================================================
+menu section style end
+================================================================================
+*/
